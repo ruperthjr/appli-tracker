@@ -1,1 +1,2 @@
-# Appli Tracker\nA comprehensive job application tracking system
+# Appli Tracker
+A comprehensive job application tracking system
