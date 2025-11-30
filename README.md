@@ -2,7 +2,7 @@
 
 A comprehensive full-stack application to help software developers, students, and job seekers track and manage their job applications throughout the hiring process.
 
-![Appli Tracker Demo](demo.mp4)
+![Appli Tracker Demo](./files/demo.mp4)
 
 ## Overview
 
