@@ -52,17 +52,17 @@ const Login = () => {
   };
 
   return (
-    <div className="fixed inset-0 bg-slate-950 flex items-center justify-center p-4">
+    <div className="fixed inset-0 bg-[#000000] flex items-center justify-center p-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
         className="w-full max-w-md"
       >
-        <div className="rounded-xl border border-slate-800 bg-slate-900 p-8 space-y-6">
+        <div className="rounded-xl border border-[#38434f] bg-[#1b1f23] p-8 space-y-6">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-slate-100">Welcome Back</h1>
-            <p className="text-slate-400 mt-2">
+            <h1 className="text-3xl font-bold text-[#ffffff]">Welcome Back</h1>
+            <p className="text-[#b0b8c1] mt-2">
               Sign in to continue to your dashboard.
             </p>
           </div>
@@ -87,7 +87,7 @@ const Login = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-slate-700 bg-slate-800 px-4 py-2 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-colors"
+                className="w-full rounded-lg border border-[#38434f] bg-[#1b1f23] px-4 py-2 text-[#ffffff] placeholder:text-[#b0b8c1] focus:outline-none focus:ring-2 focus:ring-[#0a66c2] transition-colors"
                 placeholder="you@example.com"
                 required
                 autoComplete="email"
@@ -104,7 +104,7 @@ const Login = () => {
                   name="password"
                   value={formData.password}
                   onChange={handleChange}
-                  className="w-full rounded-lg border border-slate-700 bg-slate-800 px-4 py-2 pr-10 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-colors"
+                  className="w-full rounded-lg border border-[#38434f] bg-[#1b1f23] px-4 py-2 pr-10 text-[#ffffff] placeholder:text-[#b0b8c1] focus:outline-none focus:ring-2 focus:ring-[#0a66c2] transition-colors"
                   placeholder="••••••••"
                   required
                   autoComplete="current-password"
@@ -112,7 +112,7 @@ const Login = () => {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute inset-y-0 right-0 flex items-center pr-3 text-slate-400 hover:text-slate-100 transition-colors"
+                  className="absolute inset-y-0 right-0 flex items-center pr-3 text-[#b0b8c1] hover:text-[#ffffff] transition-colors"
                   aria-label={showPassword ? "Hide password" : "Show password"}
                 >
                   {showPassword ? (
@@ -122,11 +122,11 @@ const Login = () => {
                   )}
                 </button>
               </div>
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-[#b0b8c1]">
                 Forgot Password?{" "}
                 <Link
                   to="/forgot-password"
-                  className="font-semibold text-emerald-300 hover:text-emerald-200 transition-colors"
+                  className="font-semibold text-[#0a66c2] hover:text-[#004182] transition-colors"
                 >
                   Click Here
                 </Link>
@@ -137,11 +137,11 @@ const Login = () => {
               type="submit"
               disabled={isLoading}
               whileTap={{ scale: 0.98 }}
-              className="w-full justify-center rounded-lg bg-emerald-500 px-5 py-2.5 font-semibold text-slate-900 hover:bg-emerald-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full justify-center rounded-lg bg-[#0a66c2] px-5 py-2.5 font-semibold text-[#1b1f23] hover:bg-[#004182] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isLoading ? (
                 <span className="flex items-center justify-center gap-2">
-                  <div className="h-4 w-4 animate-spin rounded-full border-2 border-slate-900 border-t-transparent" />
+                  <div className="h-4 w-4 animate-spin rounded-full border-2 border-[#1b1f23] border-t-transparent" />
                   Signing in...
                 </span>
               ) : (
@@ -150,11 +150,11 @@ const Login = () => {
             </motion.button>
           </form>
 
-          <p className="text-center text-sm text-slate-400">
+          <p className="text-center text-sm text-[#b0b8c1]">
             Don't have an account?{" "}
             <Link
               to="/signup"
-              className="font-semibold text-emerald-300 hover:text-emerald-200 transition-colors"
+              className="font-semibold text-[#0a66c2] hover:text-[#004182] transition-colors"
             >
               Sign up
             </Link>

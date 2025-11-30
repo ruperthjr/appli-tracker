@@ -10,7 +10,7 @@ import {
 import { BuildingOfficeIcon, TrashIcon } from "@heroicons/react/24/outline";
 
 const ratingColorMap = {
-  high: "text-emerald-300",
+  high: "text-[#0a66c2]",
   medium: "text-amber-300",
   low: "text-rose-300",
 };

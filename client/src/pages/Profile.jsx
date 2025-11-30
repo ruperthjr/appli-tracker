@@ -150,7 +150,7 @@ const Profile = () => {
       icon: BriefcaseIcon,
       label: "Job Applications",
       value: jobs?.length ?? 0,
-      accent: "from-emerald-400/20 to-emerald-500/10",
+      accent: "from-[#0a66c2]/20 to-[#004182]/10",
     },
     {
       icon: DocumentTextIcon,
@@ -272,7 +272,7 @@ const Profile = () => {
                     type="submit"
                     disabled={isSaving}
                     whileTap={{ scale: 0.97 }}
-                    className="inline-flex items-center gap-1 rounded-md px-3 py-1 bg-emerald-600 text-white text-sm font-medium hover:bg-emerald-500 transition disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="inline-flex items-center gap-1 rounded-md px-3 py-1 bg-[#0a66c2] text-white text-sm font-medium hover:bg-[#004182] transition disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     <CheckIcon className="w-3 h-3" />
                     {isSaving ? "Saving..." : "Save"}

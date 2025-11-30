@@ -74,7 +74,7 @@ const Reviewpage = () => {
           <motion.button
             onClick={() => setShowNewReview(true)}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center justify-center rounded-full h-9 px-4 font-semibold text-sm border border-emerald-500 bg-emerald-500 text-slate-900 transition hover:bg-emerald-400 hover:border-emerald-400"
+            className="inline-flex items-center justify-center rounded-full h-9 px-4 font-semibold text-sm border border-[#0a66c2] bg-[#0a66c2] text-slate-900 transition hover:bg-[#004182] hover:border-[#004182]"
           >
             <PlusIcon className="w-3.5 h-3.5" />
             {"Add Review"}

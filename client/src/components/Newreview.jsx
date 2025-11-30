@@ -220,7 +220,7 @@ const Newreview = ({ onSuccess, onCancel }) => {
               <button
                 type="button"
                 onClick={addRoundEnd}
-                className="inline-flex items-center gap-2 rounded-md bg-emerald-500 hover:bg-emerald-400 px-4 py-2 text-sm text-slate-900 font-semibold transition focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="inline-flex items-center gap-2 rounded-md bg-[#0a66c2] hover:bg-[#004182] px-4 py-2 text-sm text-slate-900 font-semibold transition focus:outline-none focus:ring-2 focus:ring-[#004182]"
               >
                 <PlusIcon className="w-4 h-4" />
                 Add Round
@@ -292,7 +292,7 @@ const Newreview = ({ onSuccess, onCancel }) => {
                 <button
                   type="button"
                   onClick={addRoundEnd}
-                  className="inline-flex items-center gap-2 rounded-md bg-emerald-500 hover:bg-emerald-400 px-4 py-2 text-sm text-slate-900 font-semibold transition focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  className="inline-flex items-center gap-2 rounded-md bg-[#0a66c2] hover:bg-[#004182] px-4 py-2 text-sm text-slate-900 font-semibold transition focus:outline-none focus:ring-2 focus:ring-[#004182]"
                 >
                   <PlusIcon className="w-4 h-4" />
                   Add Another Round
@@ -323,7 +323,7 @@ const Newreview = ({ onSuccess, onCancel }) => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="rounded-md px-6 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold transition disabled:opacity-60 disabled:cursor-not-allowed inline-flex items-center gap-2"
+            className="rounded-md px-6 py-2 bg-[#0a66c2] hover:bg-[#004182] text-slate-900 font-semibold transition disabled:opacity-60 disabled:cursor-not-allowed inline-flex items-center gap-2"
             aria-disabled={isSubmitting}
           >
             {isSubmitting ? (

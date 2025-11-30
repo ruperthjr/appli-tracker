@@ -133,9 +133,9 @@ const JobInfo = ({ job, onClose }) => {
   const getJobTypeClass = (type) => {
     switch (type) {
       case "full-time":
-        return "px-2 py-1 rounded-lg bg-emerald-400/20 text-emerald-300 text-xs font-semibold";
+        return "px-2 py-1 rounded-lg bg-[#0a66c2]/20 text-[#0a66c2] text-xs font-semibold";
       case "part-time":
-        return "px-2 py-1 rounded-lg bg-blue-400/20 text-blue-300 text-xs font-semibold";
+        return "px-2 py-1 rounded-lg bg-[#0a66c2]/20 text-[#0a66c2] text-xs font-semibold";
       case "intern":
         return "px-2 py-1 rounded-lg bg-purple-400/20 text-purple-300 text-xs font-semibold";
       default:
@@ -187,7 +187,7 @@ const JobInfo = ({ job, onClose }) => {
         <motion.button
           onClick={() => setEditMode(!editMode)}
           whileTap={{ scale: 0.95 }}
-          className="flex-shrink-0 self-start sm:self-center inline-flex items-center justify-center rounded-lg h-10 px-4 font-semibold text-sm border border-emerald-500 bg-emerald-500 text-slate-900 transition hover:bg-emerald-400 hover:border-emerald-400"
+          className="flex-shrink-0 self-start sm:self-center inline-flex items-center justify-center rounded-lg h-10 px-4 font-semibold text-sm border border-[#0a66c2] bg-[#0a66c2] text-slate-900 transition hover:bg-[#004182] hover:border-[#004182]"
         >
           <PencilIcon className="w-5 h-5 text-slate-900 font-semibold" />
           <span className="ml-2 text-slate-900 font-semibold">
@@ -276,7 +276,7 @@ const JobInfo = ({ job, onClose }) => {
                       newRound: "",
                     }));
                   }}
-                  className="px-3 py-1 bg-emerald-500 text-slate-900 font-semibold rounded-lg text-sm hover:bg-emerald-400 transition"
+                  className="px-3 py-1 bg-[#0a66c2] text-slate-900 font-semibold rounded-lg text-sm hover:bg-[#004182] hover:border-[#004182] transition"
                 >
                   Add
                 </button>
@@ -366,7 +366,7 @@ const JobInfo = ({ job, onClose }) => {
             className="w-full px-3 py-2 text-sm rounded-lg bg-[#0f172a] border border-white/10 text-[#f1f5f9]"
           />
         ) : currentJob.review ? (
-          <div className="p-4 bg-emerald-500/5 border border-emerald-300/20 rounded-lg text-[#f1f5f9]">
+          <div className="p-4 bg-[#0a66c2]/5 border border-[#0a66c2]/20 rounded-lg text-[#f1f5f9]">
             <p className="whitespace-pre-wrap leading-relaxed text-sm">
               {currentJob.review}
             </p>

@@ -12,12 +12,14 @@
 
 :root {
   color-scheme: dark;
-  --bg-primary: #020617;
-  --bg-surface: #0f172a;
-  --border-color: #1e293b;
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --accent-primary: #10b981;
+  --bg-primary: #000000;
+  --bg-surface: #1b1f23;
+  --border-color: #38434f;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b8c1;
+  --accent-primary: #0a66c2;
+  --accent-hover: #004182;
+  --accent-light: #378fe9;
 }
 
 html {
@@ -79,7 +81,7 @@ body {
   font-weight: 600;
   font-size: 0.95rem;
   border: 1px solid var(--border-color);
-  background-color: #334155;
+  background-color: #38434f;
   color: var(--text-primary);
   text-decoration: none;
   transition: all 0.2s ease;
@@ -87,19 +89,19 @@ body {
 
 .dark-button:hover {
   transform: translateY(-1px);
-  border-color: #475569;
-  background-color: #475569;
+  border-color: #4a5763;
+  background-color: #4a5763;
 }
 
 .dark-button--primary {
   background-color: var(--accent-primary);
   border-color: var(--accent-primary);
-  color: var(--bg-primary);
+  color: #ffffff;
 }
 
 .dark-button--primary:hover {
-  background-color: #34d399;
-  border-color: #34d399;
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
 }
 
 .page-width {

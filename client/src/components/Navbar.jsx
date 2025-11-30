@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className="flex items-center gap-6">
           <Link
             to="/"
-            className="text-lg sm:text-xl font-semibold tracking-tight text-[#50C878] drop-shadow"
+            className="text-lg sm:text-xl font-semibold tracking-tight text-[#0a66c2] drop-shadow"
           >
             <HomeIcon className="w-6 h-6 mb-1 mr-1" />
           </Link>
@@ -145,7 +145,7 @@ const Navbar = () => {
               </Link>
               <Link
                 to="/signup"
-                className="h-11 px-4 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold rounded-full flex items-center justify-center transition-colors"
+                className="h-11 px-4 bg-[#0a66c2] hover:bg-[#004182] text-slate-900 font-semibold rounded-full flex items-center justify-center transition-colors"
               >
                 Sign Up
               </Link>

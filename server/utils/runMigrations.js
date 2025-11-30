@@ -13,7 +13,6 @@ async function runMigrations(providedSequelize) {
           "DATABASE_URL not set. Set process.env.DATABASE_URL to your Supabase/Postgres connection string."
         );
       }
-
       return new Sequelize(dbUrl, {
         dialect: "postgres",
         logging: false,
@@ -44,9 +43,7 @@ async function runMigrations(providedSequelize) {
   try {
     await sequelize.authenticate();
     console.log("Database connection authenticated.");
-
     const executed = await umzug.up();
-
     if (executed.length === 0) {
       console.log("No pending migrations. Database is up to date.");
     } else {
@@ -55,21 +52,12 @@ async function runMigrations(providedSequelize) {
         executed.map((m) => m.name)
       );
     }
-
     return executed;
   } catch (err) {
     console.error("Migration failed:", err);
     throw err;
-  } finally {
-    if (createdSequelize) {
-      try {
-        await sequelize.close();
-        console.log("Closed temporary DB connection.");
-      } catch (closeErr) {
-        console.warn("Error while closing DB connection:", closeErr);
-      }
-    }
   }
+  // REMOVED the finally block that was closing the connection!
 }
 
 module.exports = runMigrations;
@@ -78,7 +66,7 @@ if (require.main === module) {
   runMigrations()
     .then((executed) => {
       const count = executed ? executed.length : 0;
-      process.exit(count === 0 ? 0 : 0);
+      process.exit(0);
     })
     .catch((err) => {
       console.error(err);

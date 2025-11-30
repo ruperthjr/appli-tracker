@@ -21,12 +21,12 @@ const JobCard = ({ job, onJobDeleteClick, onJobSelect }) => {
     switch (type.toLowerCase()) {
       case "full time":
       case "full-time":
-        return `${base} bg-emerald-400/20 text-emerald-300 border-emerald-400/30`;
+        return `${base} bg-[#0a66c2]/20 text-[#0a66c2] border-[#0a66c2]/30`;
       case "part time":
       case "part-time":
-        return `${base} bg-blue-400/20 text-blue-300 border-blue-400/30`;
+        return `${base} bg-[#0a66c2]/20 text-[#0a66c2] border-[#0a66c2]/30`;
       case "contract":
-        return `${base} bg-amber-400/20 text-amber-300 border-amber-400/30`;
+        return `${base} bg-[#0a66c2]/20 text-[#0a66c2] border-[#0a66c2]/30`;
       case "internship":
         return `${base} bg-purple-400/20 text-purple-300 border-purple-400/30`;
       default:
