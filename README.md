@@ -33,7 +33,7 @@ Appli Tracker is a full-stack web application designed to help users organize th
 - Keep notes about company culture and learning opportunities
 - Prepare for interviews with historical data
 
-### Appli Seekers
+### Job Seekers
 - Centralize all job application data in one place
 - Monitor application status and progress
 - Remember important details about each company
