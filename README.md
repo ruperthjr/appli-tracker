@@ -2,7 +2,13 @@
 
 A comprehensive full-stack application to help software developers, students, and job seekers track and manage their job applications throughout the hiring process.
 
-![Appli Tracker Demo](./files/demo.mp4)
+## 🎥 Demo
+
+https://github.com/ruperthjr/appli-tracker/files/demo.mp4
+
+> A complete walkthrough of Appli Tracker's features including user authentication, job application management, and AI-powered insights.
+
+---
 
 ## Overview
 
