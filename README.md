@@ -6,8 +6,7 @@ A comprehensive full-stack application to help software developers, students, an
 
 https://github.com/ruperthjr/appli-tracker/files/demo.mp4
 
-> A complete walkthrough of Appli Tracker's features including user authentication, job application management, and AI-powered insights.
-
+> A simple walkthrough of Appli Tracker's features.
 ---
 
 ## Overview
